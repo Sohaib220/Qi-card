@@ -124,7 +124,7 @@ main {
 }
 
 .box.in-view {
-    animation: slidefromdown 2s ease-in;
+    animation: slidefromdown 0.5s ease-in;
 }
 
 .box:hover {
@@ -166,27 +166,38 @@ main {
     }
 }
 
-
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .photo {
+        width: 90%;
         height: auto;
-        width: auto;
     }
-}
 
-@media (max-width: 768px) {
     .box {
-        border-width: auto;
-        padding: auto;
+        width: 80%;
         height: auto;
-        width: auto;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-width: 10px;
+        border-radius: 50px;
     }
-}
-@media (max-width: 768px) {
+
     .main0 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section0 h1, .section0 h4 {
+        text-align: center;
+    }
+
+    header {
+        padding-right: 1%;
+        justify-content: center;
     }
 }
