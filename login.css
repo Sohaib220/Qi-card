@@ -41,6 +41,9 @@ section {
 }
 
 .photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     animation: slidefromright 1s ease-in 0s 1 normal none;
 }
 
@@ -58,11 +61,11 @@ section {
     content: '';
     position: absolute;
     top: 0;
-    left: -30%;
-    width: 70%;
+    left: -60%;
+    width: 100%;
     height: 100%;
     background: url(qi\ card\ logo.webp) no-repeat center center;
-    background-size: 50%;
+    background-size: 80%;
     opacity: 0.2;
 }
 
@@ -84,6 +87,7 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    margin-top:30px;
 }
 
 .main1 {
@@ -92,7 +96,7 @@ main {
     align-items: end;
     animation: slidefromleft 1s ease-in 0s 1 normal none;
     margin: 0px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .box {
@@ -162,9 +166,11 @@ main {
     }
 }
 
+
 @media (max-width: 768px) {
-    section {
+    .photo {
         height: auto;
+        width: auto;
     }
 }
 
@@ -176,4 +182,11 @@ main {
         width: auto;
     }
 }
-
+@media (max-width: 768px) {
+    .main0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
+}
